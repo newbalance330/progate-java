@@ -1,19 +1,21 @@
 class Main {
   public static void main(String[] args) {
-    int n = 0;
+    // 変数numbersに、与えられた数字の配列を代入してください
+    int[] numbers = {1, 4, 6, 9, 13, 16};
     
-    switch (n) {
-      case 1:
-        System.out.println("大吉です");
-        break;
-      case 2:
-        System.out.println("中吉です");
-        break;
-      // defaultを用いて、変数nの値がどのcaseにも合致しない場合の処理を記述してください
-      default:
-        System.out.println("凶です");
-        break;
-      
+    int oddSum = 0;
+    int evenSum = 0;
+    
+    // for文を用いて、配列numbersの偶数の和と奇数の和を求めてください
+    for (int number : numbers) {
+      if (number % 2 == 0) {
+        evenSum += number;
+      } else {
+        oddSum += number;
+      }
     }
+
+    System.out.println("奇数の和は" + oddSum + "です");
+    System.out.println("偶数の和は" + evenSum + "です");
   }
 }
