@@ -7,7 +7,7 @@ class Main {
     int evenSum = 0;
     
     // for文を用いて、配列numbersの偶数の和と奇数の和を求めてください
-    for (int number : numbers) {
+    for (int number : numbers) {     // 左記の記述は for (int i = 0; i < numbers.length; i++) を略した記述
       if (number % 2 == 0) {
         evenSum += number;
       } else {
